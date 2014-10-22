@@ -75,6 +75,13 @@
           android:title="@string/vibrate_hangup"
           android:persistent="true" />
 
+    <CheckBoxPreference
+        android:key="prox_auto_speaker"
+        android:title="@string/prox_auto_speaker_title"
+        android:summary="@string/prox_auto_speaker_summary"
+        android:persistent="false"
+        android:defaultValue="false" />
+
     <ListPreference
         android:key="dialkey_padding"
         android:title="@string/dialkey_padding_title"

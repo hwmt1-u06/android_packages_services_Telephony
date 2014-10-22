@@ -96,6 +96,10 @@
     <string name="national_roaming_enable">Connect to data services when nationally roaming</string>
     <!-- Mobile network settings screen, setting summary text when check box is clear -->
     <string name="national_roaming_disable">Do not connect to data services when nationally roaming</string>
+ 
+    <!-- Proximity Auto Apeaker-->
+    <string name="prox_auto_speaker_title">Automatic proximity speaker</string>
+    <string name="prox_auto_speaker_summary">Enable speakerphone when the device is removed from your face</string>
 
     <!-- Setting title for dialpad key padding. -->
     <string name="dialkey_padding_title">Dialpad key padding</string>
