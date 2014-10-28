@@ -99,8 +99,7 @@ public class PhoneInterfaceManager extends ITelephony.Stub implements CallModele
     private static final int EVENT_SIM_IO_DONE = 14;
     private static final int CMD_SIM_GET_ATR = 15;
     private static final int EVENT_SIM_GET_ATR_DONE = 16;
-    private static final int CMD_TOGGLE_LTE = 17;
-    private static final int CMD_TOGGLE_2G = 18;
+    private static final int CMD_TOGGLE_LTE = 17; // not used yet
 
     /** The singleton instance. */
     private static PhoneInterfaceManager sInstance;
@@ -1485,6 +1484,21 @@ public class PhoneInterfaceManager extends ITelephony.Stub implements CallModele
         public void unlinkDeathRecipient() {
             mBinder.unlinkToDeath(this, 0);
         }
+    }
+
+    @Override
+    public void onModifyCall(Call call) {
+        // no-op
+    }
+
+    @Override
+    public void onActiveSubChanged(int activeSub) {
+        // no-op
+    }
+
+    @Override
+    public void onSuppServiceFailed(int service) {
+        // no-op
     }
 
     private String exchangeIccApdu(int cla, int command,
